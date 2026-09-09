@@ -1,1 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>820 W 38th | Luxury Furnished Home | Chicago</title>
+    <meta name="description" content="Premium 4-bed luxury furnished home in Chicago. Perfect for corporate relocations, ALE displacement, and medical professionals. All-inclusive, turn-key, 24/7 security.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #1d6e48;
+            --primary-dark: #0f4c2f;
+            --accent: #d4c47e;
+            --text-dark: #1a1a1a;
+            --text-light: #666;
+            --bg-light: #f9f9f9;
+            --border-color: #e0e0e0;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background: var(--white);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+        .cta-button {
+            background: var(--accent);
+            color: var(--white);
+            padding: 12px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            background: #c9b758;
+        }
+        
+        .cta-button-secondary {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .cta-button-secondary:hover {
+            background: var(--primary-dark);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .hero .subtitle {
+            font-size: 22px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .hero-cta button {
+            padding: 16px 40px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .hero-cta .btn-primary {
+            background: var(--accent);
+            color: var(--white);
+        }
+        
+        .hero-cta .btn-primary:hover {
+            background: #c9b758;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+        
+        .hero-cta .btn-secondary {
+            background: var(--white);
+            color: var(--primary);
+        }
+        
+        .hero-cta .btn-secondary:hover {
+            background: var(--bg-light);
+            transform: translateY(-2px);
+        }
+        
+        /* Image Gallery */
+        .gallery-section {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+        
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 50px;
+            text-align: center;
+            color: var(--text-dark);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            aspect-ratio: 1;
+            background: var(--white);
+            border: 2px dashed var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+        
+        .gallery-placeholder {
+            text-align: center;
+            color: var(--text-light);
+        }
+        
+        .gallery-placeholder p:first-child {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        
+        .gallery-placeholder p:last-child {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+        
+        /* Property Overview */
+        .overview-section {
+            padding: 80px 0;
+        }
+        
+        .overview-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .overview-content h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+        
+        .overview-content p {
+            color: var(--text-light);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .feature-list {
+            list-style: none;
+            margin-top: 30px;
+        }
+        
+        .feature-list li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            color: var(--text-light);
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .overview-image {
+            background: var(--border-color);
+            border-radius: 8px;
+            padding: 60px;
+            text-align: center;
+            color: var(--text-light);
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Bedrooms Section */
+        .bedrooms-section {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+        
+        .bedroom-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .bedroom-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .bedroom-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 32px rgba(0,0,0,0.1);
+        }
+        
+        .bedroom-image {
+            width: 100%;
+            height: 240px;
+            background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 48px;
+        }
+        
+        .bedroom-content {
+            padding: 30px;
+        }
+        
+        .bedroom-content h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        .bedroom-content p {
+            color: var(--text-light);
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+        
+        .bedroom-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+        
+        .feature-badge {
+            background: var(--primary);
+            color: var(--white);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        /* Amenities Section */
+        .amenities-section {
+            padding: 80px 0;
+        }
+        
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .amenity-item {
+            padding: 30px;
+            background: var(--bg-light);
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+            text-align: center;
+        }
+        
+        .amenity-icon {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        
+        .amenity-item h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        
+        .amenity-item p {
+            color: var(--text-light);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        /* Smart Home Features */
+        .smart-home-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+        }
+        
+        .smart-home-section .section-title {
+            color: var(--white);
+        }
+        
+        .smart-features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .smart-feature-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        .smart-feature-card h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .smart-feature-card p {
+            font-size: 14px;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+        
+        /* Ideal For Section */
+        .ideal-for-section {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+        
+        .ideal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        
+        .ideal-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+        
+        .ideal-card-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .ideal-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        .ideal-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        
+        /* Pricing Section */
+        .pricing-section {
+            padding: 80px 0;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .pricing-card {
+            background: var(--white);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .pricing-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+        }
+        
+        .pricing-card.featured {
+            border: 2px solid var(--accent);
+            background: linear-gradient(135deg, rgba(216, 90, 48, 0.05) 0%, rgba(44, 90, 160, 0.05) 100%);
+            transform: scale(1.05);
+        }
+        
+        .pricing-card h3 {
+            font-size: 24px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .pricing-amount {
+            font-size: 42px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        
+        .pricing-period {
+            color: var(--text-light);
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        
+        .pricing-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-light);
+            font-size: 14px;
+        }
+        
+        .pricing-features li:before {
+            content: "✓ ";
+            color: var(--accent);
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+        }
+        
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .contact-section .section-title {
+            color: var(--white);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 6px;
+            background: rgba(255,255,255,0.1);
+            color: var(--white);
+            font-family: inherit;
+            font-size: 14px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: rgba(255,255,255,0.15);
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: var(--accent);
+            color: var(--white);
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background: #c9b758;
+        }
+        
+        /* Key Stats */
+        .stats-section {
+            padding: 60px 0;
+            background: var(--bg-light);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+        
+        .stat-item h4 {
+            font-size: 32px;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .stat-item p {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        footer p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            nav {
+                order: 3;
+                width: 100%;
+                text-align: center;
+            }
+            
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .overview-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .bedroom-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">820 W 38th</div>
+                <nav>
+                    <a href="#overview">Property</a>
+                    <a href="#amenities">Amenities</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <a href="#contact" class="cta-button">Inquire Now</a>
+            </div>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Luxury Furnished Home in Chicago</h1>
+            <p class="subtitle">Premium 4-bed, 3.5-bath single family home with 24/7 security, smart home tech & turn-key occupancy</p>
+            <div class="hero-cta">
+                <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Schedule Tour</button>
+                <button class="btn-secondary" onclick="document.getElementById('amenities').scrollIntoView({behavior: 'smooth'})">View Amenities</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Property Gallery</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 40px; font-size: 16px;">
+                ✨ Add your 20+ professional property photos to these gallery placeholders ✨
+            </p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <p>🏠</p>
+                        <p>Photo 1</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <p>🛏️</p>
+                        <p>Photo 2</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <p>🍳</p>
+                        <p>Photo 3</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <p>🏋️</p>
+                        <p>Photo 4</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <p>📺</p>
+                        <p>Photo 5</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <p>🚗</p>
+                        <p>Photo 6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Stats -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h4>4</h4>
+                    <p>Bedrooms with SmartTV</p>
+                </div>
+                <div class="stat-item">
+                    <h4>3.5</h4>
+                    <p>Bathrooms</p>
+                </div>
+                <div class="stat-item">
+                    <h4>24/7</h4>
+                    <p>Vivint Security Monitoring</p>
+                </div>
+                <div class="stat-item">
+                    <h4>24-48hrs</h4>
+                    <p>Turn-Key Occupancy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Overview -->
+    <section class="overview-section" id="overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content">
+                    <h2>Premium Luxury Furnished Home</h2>
+                    <p>820 W 38th St is a meticulously maintained, family-owned luxury townhome perfect for corporate relocations, ALE insurance displacement, medical professionals, and executive temporary housing. Purchased new 9 years ago, this property features premium smart home technology, all-inclusive utilities, and professional 24/7 security monitoring.</p>
+                    
+                    <h3 style="color: var(--primary); margin-top: 30px; margin-bottom: 20px; font-size: 20px;">Why Choose This Property?</h3>
+                    <ul class="feature-list">
+                        <li>All-inclusive pricing (utilities + Xfinity internet included)</li>
+                        <li>24/7 Vivint security monitoring (actively subscribed)</li>
+                        <li>SmartTV in every bedroom (55" primary, 32"-50" guest rooms)</li>
+                        <li>Dedicated office space (dual monitors + printer)</li>
+                        <li>Premium Sleep Number bed with adjustable heating</li>
+                        <li>Peloton fitness studio in basement</li>
+                        <li>Pet-friendly (artificial turf, spacious backyard)</li>
+                        <li>Turn-key occupancy (24-48 hours)</li>
+                    </ul>
+                </div>
+                <div class="overview-image">
+                    <div style="text-align: center;">
+                        <div style="font-size: 64px; margin-bottom: 20px;">📸</div>
+                        <p style="font-size: 16px;">Add hero property image here</p>
+                        <p style="font-size: 12px; opacity: 0.7; margin-top: 10px;">Recommend professional exterior or living room photo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bedrooms Section -->
+    <section class="bedrooms-section">
+        <div class="container">
+            <h2 class="section-title">Bedroom Showcase</h2>
+            <div class="bedroom-grid">
+                <div class="bedroom-card">
+                    <div class="bedroom-image">🛏️ Primary Suite</div>
+                    <div class="bedroom-content">
+                        <h3>Primary Suite</h3>
+                        <p>Spa-inspired luxury with premium amenities</p>
+                        <div class="bedroom-features">
+                            <span class="feature-badge">55" SmartTV</span>
+                            <span class="feature-badge">Soaking Tub</span>
+                            <span class="feature-badge">Granite Vanity</span>
+                            <span class="feature-badge">Walk-in Closet</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bedroom-card">
+                    <div class="bedroom-image">💼 Bedroom #2 - Office</div>
+                    <div class="bedroom-content">
+                        <h3>Bedroom #2 - Home Office</h3>
+                        <p>Dedicated office/gaming setup perfect for remote work</p>
+                        <div class="bedroom-features">
+                            <span class="feature-badge">50" SmartTV</span>
+                            <span class="feature-badge">Dual Monitors</span>
+                            <span class="feature-badge">Printer</span>
+                            <span class="feature-badge">Docking Station</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bedroom-card">
+                    <div class="bedroom-image">🌙 Bedroom #1</div>
+                    <div class="bedroom-content">
+                        <h3>Guest Bedroom #1</h3>
+                        <p>Comfortable guest room with premium amenities</p>
+                        <div class="bedroom-features">
+                            <span class="feature-badge">32" SmartTV</span>
+                            <span class="feature-badge">Mini Fridge</span>
+                            <span class="feature-badge">Walk-in Closet</span>
+                            <span class="feature-badge">Smart Ceiling Fan</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bedroom-card">
+                    <div class="bedroom-image">😴 Bedroom #3</div>
+                    <div class="bedroom-content">
+                        <h3>Basement Bedroom</h3>
+                        <p>King-size Sleep Number bed with premium comfort</p>
+                        <div class="bedroom-features">
+                            <span class="feature-badge">50" SmartTV</span>
+                            <span class="feature-badge">Sleep Number Bed</span>
+                            <span class="feature-badge">Custom Organizer</span>
+                            <span class="feature-badge">Private Access</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities-section" id="amenities">
+        <div class="container">
+            <h2 class="section-title">Premium Amenities</h2>
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <div class="amenity-icon">🍳</div>
+                    <h3>Smart Kitchen</h3>
+                    <p>Premium LG appliances with air fryer & convection functions, quartz countertops, island seating, Echo Show</p>
+                </div>
+                
+                <div class="amenity-item">
+                    <div class="amenity-icon">🏋️</div>
+                    <h3>Fitness Studio</h3>
+                    <p>Dedicated basement workout space with Peloton bike, free weights, and 32" SmartTV</p>
+                </div>
+                
+                <div class="amenity-item">
+                    <div class="amenity-icon">🎬</div>
+                    <h3>Media Room</h3>
+                    <p>75" Sony SmartTV with integrated soundbar, theater seating, luxury area rug</p>
+                </div>
+                
+                <div class="amenity-item">
+                    <div class="amenity-icon">🌳</div>
+                    <h3>Outdoor Living</h3>
+                    <p>Professionally landscaped yard, private patio, gas grill, Green Egg smoker, pet-friendly artificial turf</p>
+                </div>
+                
+                <div class="amenity-item">
+                    <div class="amenity-icon">🛏️</div>
+                    <h3>Laundry</h3>
+                    <p>LG stackable washer/dryer on 2nd floor near primary bedroom</p>
+                </div>
+                
+                <div class="amenity-item">
+                    <div class="amenity-icon">🚗</div>
+                    <h3>Parking</h3>
+                    <p>2-car garage for secure, convenient parking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Home Section -->
+    <section class="smart-home-section">
+        <div class="container">
+            <h2 class="section-title">Smart Home Technology</h2>
+            <div class="smart-features-grid">
+                <div class="smart-feature-card">
+                    <h3>🔒 Vivint Security</h3>
+                    <p>Professional 24/7 monitoring with door/window sensors and motion detection. Actively subscribed for occupant peace of mind.</p>
+                </div>
+                
+                <div class="smart-feature-card">
+                    <h3>📡 Mesh Wi-Fi</h3>
+                    <p>Eero Pro 6E system (upgraded June 2026) with full home and outdoor coverage for seamless connectivity.</p>
+                </div>
+                
+                <div class="smart-feature-card">
+                    <h3>🎙️ Amazon Alexa</h3>
+                    <p>Alexa ecosystem with Echo Dots, Echo Show, and Echo Spot for voice control throughout the home.</p>
+                </div>
+                
+                <div class="smart-feature-card">
+                    <h3>🌡️ Smart Climate</h3>
+                    <p>ecobee smart thermostat (Alexa-enabled) with mobile app control for customized comfort.</p>
+                </div>
+                
+                <div class="smart-feature-card">
+                    <h3>💡 Smart Lighting</h3>
+                    <p>Philips Wi-Fi lighting throughout interior and exterior with remote control options.</p>
+                </div>
+                
+                <div class="smart-feature-card">
+                    <h3>📺 SmartTV Everywhere</h3>
+                    <p>Sony and Toshiba SmartTVs in every bedroom for entertainment and streaming.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ideal For Section -->
+    <section class="ideal-for-section">
+        <div class="container">
+            <h2 class="section-title">Perfect For</h2>
+            <div class="ideal-grid">
+                <div class="ideal-card">
+                    <div class="ideal-card-icon">🏢</div>
+                    <h3>Corporate Relocations</h3>
+                    <p>Premium furnished home ideal for executive relocations, remote work teams, and business travelers. Flexible lease terms from 30 days to 12+ months.</p>
+                </div>
+                
+                <div class="ideal-card">
+                    <div class="ideal-card-icon">🏥</div>
+                    <h3>Medical Professionals</h3>
+                    <p>Perfect for traveling nurses, healthcare professionals, and medical specialists. Comfortable, secure, family-friendly with premium amenities.</p>
+                </div>
+                
+                <div class="ideal-card">
+                    <div class="ideal-card-icon">🏠</div>
+                    <h3>ALE Displacement</h3>
+                    <p>Turn-key solution for insurance-displaced families. All-inclusive pricing, 24/7 security monitoring, and immediate occupancy availability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Rental Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>30-Day Rental</h3>
+                    <div class="pricing-amount">$4,900</div>
+                    <div class="pricing-period">Per month</div>
+                    <ul class="pricing-features">
+                        <li>All utilities included</li>
+                        <li>Xfinity internet included</li>
+                        <li>24/7 security monitoring</li>
+                        <li>Full home access</li>
+                        <li>Month-to-month flexibility</li>
+                    </ul>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <h3>60-90 Day Rental</h3>
+                    <div class="pricing-amount">$4,500</div>
+                    <div class="pricing-period">Per month (5% discount)</div>
+                    <ul class="pricing-features">
+                        <li>All utilities included</li>
+                        <li>Xfinity internet included</li>
+                        <li>24/7 security monitoring</li>
+                        <li>Full home access</li>
+                        <li>Flexible extensions</li>
+                    </ul>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>180+ Day Rental</h3>
+                    <div class="pricing-amount">$4,100</div>
+                    <div class="pricing-period">Per month (10% discount)</div>
+                    <ul class="pricing-features">
+                        <li>All utilities included</li>
+                        <li>Xfinity internet included</li>
+                        <li>24/7 security monitoring</li>
+                        <li>Full home access</li>
+                        <li>Extended term flexibility</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 40px; color: var(--text-light);">
+                All prices are all-inclusive. Lease terms and custom rates available upon request. Security deposit required.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <h2 class="section-title">Schedule Your Tour</h2>
+                <p style="text-align: center; margin-bottom: 40px; font-size: 16px; opacity: 0.95;">
+                    Interested in this luxury furnished home? Schedule a tour or inquire about availability today.
+                </p>
+                
+                <form onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your housing needs, preferred move-in date, and any questions..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Request Information</button>
+                </form>
+                
+                <div style="text-align: center; margin-top: 40px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.2);">
+                    <p style="margin-bottom: 15px;">📍 820 W 38th St, Chicago, IL 60609</p>
+                    <p style="margin-bottom: 15px;">📧 <a href="mailto:info@820w38th.com" style="color: var(--accent);">info@820w38th.com</a></p>
+                    <p>📱 <a href="tel:+15551234567" style="color: var(--accent);">(555) 123-4567</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Chicago Lux Rental. All rights reserved.</p>
+            <p style="font-size: 12px; opacity: 0.8; margin-top: 15px;">
+                Premium furnished housing for corporate relocations, ALE displacement, and medical professionals.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Email validation
+            const mailtoLink = `mailto:info@820rental.com?subject=Tour Inquiry - ${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`)}`;
+            
+            window.location.href = mailtoLink;
+            
+            // Reset form
+            event.target.reset();
+            alert('Thank you for your inquiry! Please use your email client to send the message, or contact us directly at (312) 213-6163');
+        }
+        
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
